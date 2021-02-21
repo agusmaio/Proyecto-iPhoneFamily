@@ -1,0 +1,71 @@
+$color-one: #2d7bea;
+$color-two: #d23aca;
+
+.bodyIphone {
+  background-image: url(/Imagenes/fondoiphone.jpg);
+}
+.divGlobal {
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+.logo-iphone__img {
+  display: flex;
+  border: solid 3px;
+  border-radius: 10px;
+  border-color: $color-one $color-one $color-two $color-two;
+  animation: girar 1s infinite linear;
+}
+
+.header__navIndex {
+  border-style: solid;
+  border-color: #2d7bea #2d7bea #d23aca #d23aca;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul li {
+    display: inline;
+    word-spacing: 30px;
+    letter-spacing: 2px;
+
+    a {
+      color: rgb(255, 255, 255);
+      font-family: 'Noto Sans', sans-serif;
+      transition: all 0.3s;
+      text-decoration: none;
+      border: 2px solid transparent;
+
+      &:hover {
+        border-style: solid;
+        border-color: $color-one $color-one $color-two $color-two;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.divGlobal__h1 {
+  margin-top: 30px;
+
+  .h1__title {
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+  }
+}
+
+.divGlobal__div-iphone {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}

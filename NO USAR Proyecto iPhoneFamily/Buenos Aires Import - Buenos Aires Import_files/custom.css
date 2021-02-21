@@ -1,0 +1,41 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+#_desktop_top_menu>.top-menu>li {
+    margin: 0 6px;
+}
+.top-menu .sub-menu ul[data-depth="1"]>li {
+    padding-bottom: 12px;
+}
+#header .logo {
+    max-height: 50px;
+}
+.p-1 {
+    padding: 0.5rem !important;
+}
+#footer {
+    
+    z-index: 2;
+}
+.modal-backdrop{
+    z-index: 3;
+}
+.whatsappDiv.right {
+    bottom: 50px;
+    z-index:1000;
+}
+.bon-stock-countdown{
+    visibility: hidden;
+}
+@media (max-width: 991px){
+    #header #_desktop_logo .logo {
+        max-height: 60px;
+    }
+}
+
+@media (max-width: 480px){
+    #bonbanners li {
+        margin-bottom: 0 !important;
+    }
+}

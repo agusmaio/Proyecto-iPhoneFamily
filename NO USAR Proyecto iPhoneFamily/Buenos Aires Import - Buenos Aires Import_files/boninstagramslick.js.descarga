@@ -1,0 +1,156 @@
+/**
+ * 2015-2019 Bonpresta
+ *
+ * Bonpresta Instagram Carousel Social Feed Photos
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the General Public License (GPL 2.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/GPL-2.0
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the module to newer
+ * versions in the future.
+ *
+ *  @author    Bonpresta
+ *  @copyright 2015-2019 Bonpresta
+ *  @license   http://opensource.org/licenses/GPL-2.0 General Public License (GPL 2.0)
+ */
+ function setWithExpiry(key, value, ttl) {
+	const now = new Date()
+
+	// `item` is an object which contains the original value
+	// as well as the time when it's supposed to expire
+	const item = {
+		value: value,
+		expiry: now.getTime() + ttl,
+	}
+	localStorage.setItem(key, JSON.stringify(item))
+}
+ function getWithExpiry(key) {
+	const itemStr = localStorage.getItem(key)
+	// if the item doesn't exist, return null
+	if (!itemStr) {
+		return null
+	}
+	const item = JSON.parse(itemStr)
+	const now = new Date()
+	// compare the expiry time of the item with the current time
+	if (now.getTime() > item.expiry) {
+		// If the item is expired, delete the item from storage
+		// and return null
+		localStorage.removeItem(key)
+		return null
+	}
+	return item.value
+}
+
+// Muestra los posts de instagram desde json
+function muestraPosts(json,bon_class){
+    let edges = json.graphql.user.edge_owner_to_timeline_media.edges;
+                var count = 0;
+                $.each(edges, function(n, edge) {
+                    if (count >= BONINSTAGRAMSLICK_LIMIT) {
+                        return false;
+                    }
+                    $('.instagram-carousel-container ul').append(
+                        '<li class="instagram-item instagram-item-gallery '+ bon_class +'"><a href="https://www.instagram.com/p/' + edge.node.shortcode +'" target="_blank" rel="nofollow" title="instagram"><img src="' + edge.node.thumbnail_src +'" alt="instagram" title="instagram"><span class="instagram_cover"></span><span class="instagram_likes">'+ edge.node.edge_media_preview_like.count +'</span><span class="instagram_comment">'+ edge.node.edge_media_to_comment.count +'</span></a></li>'
+                    );
+                    count++;
+                });
+}
+
+$(document).ready(function(){
+
+    if (BONINSTAGRAMSLICK_TYPE == 'user') {
+        var name = BONINSTAGRAMSLICK_USERID;
+        if(typeof(BONINSTAGRAMSLICK_DISPLAY_CAROUSEL) != 'undefined' && BONINSTAGRAMSLICK_DISPLAY_CAROUSEL) {
+            var bon_class = '';
+        } else {
+            var bon_class = '';
+        }
+        let json = getWithExpiry("ig_feed")
+        if(json){
+            console.log("mostrando posts desde cache",typeof json,json)
+            muestraPosts(json,bon_class)
+        } else { 
+        
+        $.get("https://www.instagram.com/" + name + "/?__a=1", function(json) {
+            if (json) {
+                muestraPosts(json) 
+                setWithExpiry("ig_feed",json,10800000)
+            } else { 
+            console.log("error obteniendo posts de instagram")
+                
+            }
+        });
+        }
+         
+        
+        setTimeout(function () {
+            BonInstSlick();
+        }, 1000);
+    } else {
+        BonInstSlick();
+    }
+
+    function BonInstSlick() {
+        if (typeof (BONINSTAGRAMSLICK_DISPLAY) != 'undefined' && BONINSTAGRAMSLICK_DISPLAY) {
+            if (BONINSTAGRAMSLICK_DOTS == 1) {
+                var BONINSTAGRAMSLICK_DOTS_SCRIPT = true;
+            } else {
+                var BONINSTAGRAMSLICK_DOTS_SCRIPT = false;
+            }
+            if (BONINSTAGRAMSLICK_NAV == 1) {
+                var BONINSTAGRAMSLICK_NAV_SCRIPT = true;
+            } else {
+                var BONINSTAGRAMSLICK_NAV_SCRIPT = false;
+            }
+            if (BONINSTAGRAMSLICK_LOOP == 1) {
+                var BONINSTAGRAMSLICK_LOOP_SCRIPT = true;
+            } else {
+                var BONINSTAGRAMSLICK_LOOP_SCRIPT = false;
+            }
+            $('.slick-carousel-instagram').slick({
+                    slidesToShow: BONINSTAGRAMSLICK_NB,
+                    infinite: BONINSTAGRAMSLICK_LOOP_SCRIPT,
+                    autoplaySpeed: BONINSTAGRAMSLICK_MARGIN,
+                    draggable: true,
+                    dots: BONINSTAGRAMSLICK_DOTS_SCRIPT,
+                    arrows: BONINSTAGRAMSLICK_NAV_SCRIPT,
+                    autoplay: true,
+                    slidesToShow: BONINSTAGRAMSLICK_NB,
+                    slidesToScroll: 1,
+                    responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: BONINSTAGRAMSLICK_NB,
+                        }
+
+                    }, {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+
+
+                    }, {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    }, {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }]
+                }
+            );
+            $('.instagram-carousel-container .slick-list').wrap('<div class="slick-list-wrap"></div>');
+        }
+    }
+});

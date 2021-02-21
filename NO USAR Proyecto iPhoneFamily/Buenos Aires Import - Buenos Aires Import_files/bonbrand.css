@@ -1,0 +1,109 @@
+
+
+#bon_manufacturers_block {
+	padding: 50px 0;
+}
+
+#bon_manufacturers_block .manufacturer_item {
+	margin-bottom: 30px;
+}
+
+#bon_manufacturers_block .manufacturer_item img {
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	transform: scale(1);
+	max-width: 100%;
+	height: auto;
+}
+
+#bon_manufacturers_block .manufacturer_item a {
+	display: block;
+	overflow: hidden;
+}
+
+#bon_manufacturers_block .manufacturer_item a:hover img{
+	transform: scale(1.1);
+}
+
+
+#bon_manufacturers_block .manufacturers-home-title {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+
+#bon_manufacturers_block .owl-nav .owl-prev{
+	 position: absolute;
+	 top: 47%;
+	 left: 0;
+	color:#777777;
+	opacity: 0;
+ }
+
+#bon_manufacturers_block .owl-nav .owl-next {
+	position: absolute;
+	top: 47%;
+	right: 0;
+	color:#777777;
+	opacity: 0;
+}
+#bon_manufacturers_block .owl-nav .owl-next:hover,
+#bon_manufacturers_block .owl-nav .owl-prev:hover {
+	color:  #0ab3a3;
+}
+
+#bon_manufacturers_block:hover .owl-nav .owl-next{
+	right: -30px;
+	opacity: 1;
+}
+#bon_manufacturers_block:hover .owl-nav .owl-prev {
+	left: -30px;
+	opacity: 1;
+}
+
+
+#bon_manufacturers_block .owl-theme .owl-nav [class*="owl-"] {
+	font-size: 27px;
+	transition: all 0.3s linear;
+	background-color: transparent;
+}
+#bon_manufacturers_block .owl-theme .owl-nav [class*="owl-"]:hover {
+	background-color: transparent;
+}
+#bon_manufacturers_block .owl-theme .owl-dots .owl-dot.active span,
+#bon_manufacturers_block .owl-theme .owl-dots .owl-dot:hover span {
+
+}
+
+.bon_manufacture_product {
+	padding: 20px;
+}
+.bon_manufacture_product_image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.bon_manufacture_list img{
+	max-width: 100%;
+	height: auto;
+}
+.bon_manufacture_product_image {
+	display: block;
+	padding: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+	#bon_manufacturers_block:hover .owl-nav .owl-next {
+		right: -20px;
+		opacity: 1;
+	}
+
+	#bon_manufacturers_block:hover .owl-nav .owl-prev {
+		left: -20px;
+		opacity: 1;
+	}
+}

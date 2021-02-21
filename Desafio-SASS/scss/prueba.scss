@@ -1,0 +1,84 @@
+$color-one: #2d7bea;
+$color-two: #d23aca;
+
+@mixin color-border {
+  border-style: solid;
+  border-color: $color-one $color-one $color-two $color-two;
+}
+
+.bodyIphone {
+  background-image: url();
+}
+.divGlobal {
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+.logo-iphone__img {
+  @include color-border;
+  display: flex;
+  border-width: 3px;
+  border-radius: 10px;
+  animation: girar 1s infinite linear;
+}
+
+.navIndex {
+  @include color-border;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @for $i from 1 through 6 {
+    &:hover ul li:nth-child(#{$i}) {
+      transition-delay: #{$i/8}s;
+    }
+  }
+  &:hover ul li {
+    //  transform: translateY(-4px);
+    transform: scale(1.05);
+  }
+  ul li {
+    display: inline-block;
+    transition: all 0.2s;
+    word-spacing: 30px;
+    letter-spacing: 2px;
+
+    a {
+      color: rgb(255, 255, 255);
+      font-family: 'Noto Sans', sans-serif;
+      transition: all 0.3s;
+      text-decoration: none;
+      border: 2px solid transparent;
+
+      &:hover {
+        @include color-border;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.divGlobal__h1 {
+  margin-top: 30px;
+
+  .h1__title {
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+  }
+}
+
+.divGlobal__div-iphone {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}

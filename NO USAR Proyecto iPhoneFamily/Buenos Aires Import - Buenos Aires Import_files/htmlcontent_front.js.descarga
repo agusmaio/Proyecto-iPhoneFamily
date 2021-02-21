@@ -1,0 +1,55 @@
+/**
+ * 2015-2019 Bonpresta
+ *
+ * Bonpresta HTML Content
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the General Public License (GPL 2.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/GPL-2.0
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the module to newer
+ * versions in the future.
+ *
+ *  @author    Bonpresta
+ *  @copyright 2015-2019 Bonpresta
+ *  @license   http://opensource.org/licenses/GPL-2.0 General Public License (GPL 2.0)
+*/
+
+$(document).ready(function(){
+    if(typeof(BON_HTML_DISPLAY_CAROUSEL) != 'undefined' && BON_HTML_DISPLAY_CAROUSEL) {
+        $('.owl-carousel-htmlcontent').owlCarousel({
+            items: BON_HTML_CAROUSEL_NB,
+            loop: BON_HTML_CAROUSEL_LOOP,
+            margin: BON_HTML_CAROUSEL_MARGIN,
+            responsiveClass:true,
+            nav: BON_HTML_CAROUSEL_NAV,
+            dots: BON_HTML_CAROUSEL_DOTS,
+            mouseDrag: true,
+            autoplay: true,
+            lazyLoad: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            navText: [
+                "❮",
+                "❯"
+            ],
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:2,
+                    items:2,
+                },
+                1000:{
+                    items: BON_HTML_CAROUSEL_NB,
+                }
+            }
+        })
+    }
+});

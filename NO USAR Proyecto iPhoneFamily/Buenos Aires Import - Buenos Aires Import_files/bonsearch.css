@@ -1,0 +1,176 @@
+
+/*MAIN STYLE CSS*/
+body .ui-autocomplete {
+    display: none!important;
+}
+
+.bonsearch_button.active {
+    color: #1552ee;
+}
+.bonsearch {
+    font-weight: 400;
+    transition: all .3s linear;
+    font-size: 25px;
+    color: #3a3a3a;
+    position: absolute;
+    top: 17px;
+    right: 120px;
+}
+
+.bonsearch:hover,
+.bonsearch:focus {
+    cursor: pointer;
+    color: #1552ee;
+}
+
+.bonsearch #input_search{
+    width: 252px;
+    height: 44px;
+    border: 1px solid #dedede;
+    padding: 5px 12px;
+    float: left;
+    font-size: 13px;
+    color: #8a8888;
+}
+
+.bonsearch #input_search:focus {
+    outline: none;
+}
+
+.bonsearch .bonsearch_box {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 5001;
+    width: 330px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+}
+
+.bonsearch .bonsearch_btn {
+    background-color: #1552ee;
+    cursor: pointer;
+    height: 44px;
+    width: 44px;
+    float: left;
+    margin-left: 3px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.14);
+    transition: all .3s linear;
+    border: 1px solid transparent;
+}
+
+.bonsearch .bonsearch_btn:hover,
+.bonsearch .bonsearch_btn:focus{
+    background-color: #0f4c82;
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+}
+
+.bonsearch .bonsearch_btn:before{
+    content: "\E049";
+    font-family: "fl-outicons";
+    font-size: 20px;
+    color: #f1eaea;
+}
+
+#search_popup {
+    width: 300px;
+    background: #fff;
+    z-index: 999;
+}
+
+#search_popup .wrap_item {
+    padding: 59px 0 0 0;
+}
+
+#search_popup .wrap_item h6{
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+#search_popup .wrap_item .product_image {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10px;
+}
+#search_popup .wrap_item .product_image img:hover {
+    opacity: 0.7;
+}
+#search_popup .wrap_item .product_image h5:hover  {
+    color: #0ab3a3;
+}
+#search_popup .wrap_item .product_image:last-child {
+    margin: 0;
+}
+#search_popup .search_img {
+    float: left;
+    width: 70px;
+    margin-right: 10px;
+}
+
+#search_popup .search_info {
+    float: left;
+    width: 217px;
+}
+
+#search_popup .search_img img{
+    max-width:100%;
+    height: auto;
+    transition: all .3s linear;
+}
+
+#search_popup .search_info h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-bottom: 8px;
+    transition: all .3s linear;
+}
+
+#search_popup .search_info .price {
+    display: block;
+    font-size: 16px;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+/*Responsive part*/
+@media (max-width: 767px){
+    .bonsearch .bonsearch_box {
+        display:none;
+        top: 62px;
+        left: 15px;
+    }
+    .bonsearch {
+        position: inherit;
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bonsearch #input_search {
+        max-width: 320px;
+    }
+    .bonsearch #input_search:focus {
+        outline: none;
+    }
+    .bonsearch #search_popup {
+        padding: 0;
+        width: 265px;
+    }
+    .bonsearch #search_popup .search_info {
+        width: 185px;
+    }
+}
+
+@media (max-width: 320px) {
+    .bonsearch .bonsearch_box {
+        left:0;
+    }
+}
+
+

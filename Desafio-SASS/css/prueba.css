@@ -1,0 +1,72 @@
+.bodyIphone {
+  background-image: url(); }
+
+.divGlobal {
+  padding: 20px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px; }
+
+.logo-iphone__img {
+  border-style: solid;
+  border-color: #2d7bea #2d7bea #d23aca #d23aca;
+  display: flex;
+  border-width: 3px;
+  border-radius: 10px;
+  animation: girar 1s infinite linear; }
+
+.navIndex {
+  border-style: solid;
+  border-color: #2d7bea #2d7bea #d23aca #d23aca;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navIndex:hover ul li:nth-child(1) {
+    transition-delay: 0.125s; }
+  .navIndex:hover ul li:nth-child(2) {
+    transition-delay: 0.25s; }
+  .navIndex:hover ul li:nth-child(3) {
+    transition-delay: 0.375s; }
+  .navIndex:hover ul li:nth-child(4) {
+    transition-delay: 0.5s; }
+  .navIndex:hover ul li:nth-child(5) {
+    transition-delay: 0.625s; }
+  .navIndex:hover ul li:nth-child(6) {
+    transition-delay: 0.75s; }
+  .navIndex:hover ul li {
+    transform: scale(1.05); }
+  .navIndex ul li {
+    display: inline-block;
+    transition: all 0.2s;
+    word-spacing: 30px;
+    letter-spacing: 2px; }
+    .navIndex ul li a {
+      color: white;
+      font-family: 'Noto Sans', sans-serif;
+      transition: all 0.3s;
+      text-decoration: none;
+      border: 2px solid transparent; }
+      .navIndex ul li a:hover {
+        border-style: solid;
+        border-color: #2d7bea #2d7bea #d23aca #d23aca;
+        border-radius: 10px; }
+
+.divGlobal__h1 {
+  margin-top: 30px; }
+  .divGlobal__h1 .h1__title {
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize; }
+
+.divGlobal__div-iphone {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between; }

@@ -1,0 +1,344 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Estilo para Index */
+.divIndex {
+  padding: 10px 10px 10px 10px;
+  background-image: url(imagenes/wallpapertip_3d-wallpaper-for-mac_490636.png);
+  background-color: rgb(34, 34, 34);
+  background-size: cover;
+  background-position: center;
+}
+.navIndex {
+  border: 20px outset #fafa;
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0px 10px 0px;
+  padding: 20px;
+  letter-spacing: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 25px;
+}
+.navIndex ul li a:hover{
+  color: blue;
+}
+.navIndex ul {
+  list-style-type: none;
+}
+.navIndex ul li {
+  display: inline;
+  word-spacing: 10px;
+}
+
+.logo1 {
+  color: rgb(82, 93, 156);
+}
+
+.section1 {
+  padding: 10px 0px 10px 0px;
+}
+
+.section2_dest {
+  margin: 20px;
+  padding: 10px 300px 10px 300px;
+  text-align: center;
+}
+.section2_vend {
+  margin: 20px;
+  padding: 10px 300px 10px 300px;
+  text-align: center;
+}
+
+.parDestacados {
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  font-family: 'Manrope', sans-serif;
+}
+.parVendidos {
+  color: rgb(255, 255, 255);
+  font-family: 'Manrope', sans-serif;
+}
+.section2_dest {
+  text-align: center;
+}
+.destacados1211pro {
+  background-color: #fafa;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+.destacados1211pro h3 {
+  color: rgb(255, 255, 255);
+  font-family: 'Manrope', sans-serif;
+}
+.section2_vend {
+  text-align: center;
+}
+.vendidos12x {
+  background-color: #fafa;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+  color: rgb(243, 243, 243);
+}
+.vendidos12x h3 {
+  color: rgb(241, 228, 238);
+  font-family: 'Manrope', sans-serif;
+}
+.asideFondo {
+  color: antiquewhite;
+  font-family: 'Manrope', sans-serif;
+}
+.asideFondo{
+text-align: center;
+}
+.ubicacionText{
+  display: inline-block;
+}
+.ubicacionMap{
+  display: inline-block;
+}
+footer {
+  background-color: rgba(87, 85, 85, 0.445);
+  color: antiquewhite;
+  font-family: 'Manrope', sans-serif;
+}
+/* espaciado entre letras para todas las filas, excepto titulo de filas */
+tr {
+  letter-spacing: 2px;
+}
+
+/* Estilo iPad */
+
+.bodyIpad {
+  background-image: url(Imagenes/ipad.png);
+  margin: 10px;
+}
+.div_table_ipad {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.tableIpad {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #fafa;
+}
+.divGlobal {
+  margin: 10px;
+}
+.h1_ipad {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+tr td ol li {
+  list-style-type: circle;
+  margin: 30px;
+}
+tr td {
+  padding: 5px;
+  margin: 10px;
+}
+.table_ipad {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.image_ipad {
+  margin-left: 30px;
+}
+
+.tit_ipad {
+  color: blueviolet;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+.ipadmodel {
+  background-color: cornflowerblue;
+  font-family: 'Manrope', sans-serif;
+}
+.ipadcolor {
+  background-color: cyan;
+  font-family: 'Manrope', sans-serif;
+}
+.ipadmemory {
+  background-color: darkkhaki;
+  font-family: 'Manrope', sans-serif;
+}
+.ipadvalor {
+  background-color: darkseagreen;
+  font-family: 'Manrope', sans-serif;
+}
+.filas {
+  background-color: rgb(212, 212, 212);
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Estilo para iPhone */
+.bodyIphone {
+  background-image: url(Imagenes/fondoiphone.jpg);
+}
+nav a {
+  color: rgb(241, 74, 199);
+  font-family: 'Manrope', sans-serif;
+}
+.h1_nav_iphone {
+  margin-top: 30px;
+}
+.table_iphone {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #fafa;
+}
+.tit_iphone {
+  color: blueviolet;
+  font-family: 'Poppins', sans-serif;
+}
+.table_iphone {
+  margin-top: 30px;
+}
+.iphonemodel {
+  background-color: rgb(237, 100, 225);
+  font-family: 'Manrope', sans-serif;
+}
+.iphonecolor {
+  background-color: cyan;
+  font-family: 'Manrope', sans-serif;
+}
+.iphonememory {
+  background-color: rgb(44, 236, 76);
+  font-family: 'Manrope', sans-serif;
+}
+.iphonevalor {
+  background-color: rgb(231, 235, 16);
+  font-family: 'Manrope', sans-serif;
+}
+.filas {
+  background-color: rgb(211, 169, 169);
+}
+.imagen_iphone {
+  margin-top: 30px;
+}
+
+/* Estilo para Wacth */
+.divWatch {
+  background-image: url(imagenes/watch1.jpg);
+}
+.titWacth {
+  color: rgb(221, 36, 107);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tablaWatch {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #fafa;
+}
+
+.wacthModel {
+  background-color: cornflowerblue;
+  font-family: 'Manrope', sans-serif;
+}
+.wacthColor {
+  background-color: cyan;
+  font-family: 'Manrope', sans-serif;
+}
+.wacthMedida {
+  background-color: firebrick;
+  color: floralwhite;
+  font-family: 'Manrope', sans-serif;
+}
+.wacthValor {
+  background-color: darkseagreen;
+  font-family: 'Manrope', sans-serif;
+}
+.filas {
+  background-color: rgb(212, 212, 212);
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Estilo para Mac */
+.bodyMac {
+  background-image: url(Imagenes/macbookprofinal.jpg);
+  background-size: cover;
+  background-position: none;
+}
+.divTableMac {
+  margin-bottom: 20px;
+}
+.table_mac {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #fafa;
+}
+.divGlobal {
+  padding: 20px;
+}
+.div_nav {
+  margin-bottom: 20px;
+}
+.titMac {
+  text-align: left;
+  text-decoration: none;
+  text-transform: initial;
+  color: rgb(248, 10, 236);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.macModel {
+  background-color: cornflowerblue;
+  font-family: 'Manrope', sans-serif;
+}
+.macColor {
+  background-color: cyan;
+  font-family: 'Manrope', sans-serif;
+}
+.macMemory {
+  background-color: darkkhaki;
+  font-family: 'Manrope', sans-serif;
+}
+.macProcer {
+  background-color: firebrick;
+  color: floralwhite;
+  font-family: 'Manrope', sans-serif;
+}
+.macValor {
+  background-color: darkseagreen;
+  font-family: 'Manrope', sans-serif;
+}
+.filas {
+  background-color: rgba(172, 172, 172, 0.822);
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Estilo para Nosotros */
+.bodyNosotros {
+  background-image: url(imagenes/wallpapertip_3d-wallpaper-for-mac_490636.png);
+  background-position: center;
+}
+.nav_nosotros{
+  margin-bottom: 20px;
+}
+.tit-nosotros {
+  color: azure;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.label {
+  color: aliceblue;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 2px;
+}
