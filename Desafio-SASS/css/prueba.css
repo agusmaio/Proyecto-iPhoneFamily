@@ -1,8 +1,9 @@
 .bodyIphone {
-  background-image: url(); }
+  background-image: url(../Imagenes/fondoiphone.jpg); }
 
 .divGlobal {
-  padding: 20px; }
+  padding: 20px;
+  margin: 10px; }
 
 .header {
   display: flex;
@@ -42,21 +43,28 @@
     transition-delay: 0.75s; }
   .navIndex:hover ul li {
     transform: scale(1.05); }
-  .navIndex ul li {
-    display: inline-block;
-    transition: all 0.2s;
-    word-spacing: 30px;
-    letter-spacing: 2px; }
-    .navIndex ul li a {
-      color: white;
-      font-family: 'Noto Sans', sans-serif;
-      transition: all 0.3s;
-      text-decoration: none;
-      border: 2px solid transparent; }
-      .navIndex ul li a:hover {
-        border-style: solid;
-        border-color: #2d7bea #2d7bea #d23aca #d23aca;
-        border-radius: 10px; }
+  .navIndex ul {
+    margin-bottom: 0;
+    padding-left: 0; }
+    .navIndex ul li {
+      display: inline;
+      transition: all 0.2s;
+      word-spacing: 30px; }
+      .navIndex ul li a {
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+        transition: all 0.3s;
+        text-decoration: none;
+        border: 2px solid transparent;
+        letter-spacing: 2px; }
+        .navIndex ul li a:hover {
+          border-style: solid;
+          border-color: #2d7bea #2d7bea #d23aca #d23aca;
+          border-radius: 10px; }
+      .navIndex ul li .fas,
+      .navIndex ul li .fab {
+        padding: 0px 15px;
+        opacity: 30%; }
 
 .divGlobal__h1 {
   margin-top: 30px; }
