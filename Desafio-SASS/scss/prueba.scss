@@ -30,7 +30,7 @@ $color-two: #d23aca;
   @include color-border;
   border-radius: 10px;
   text-align: center;
-  padding: 10px;
+  //padding: 10px;
   font-size: 25px;
   flex-grow: 1;
   display: flex;
@@ -43,13 +43,10 @@ $color-two: #d23aca;
     }
   }
   &:hover ul li {
-    //  transform: translateY(-4px);
+    //transform: translateY(-4px);
     transform: scale(1.05);
   }
-  ul {
-    margin-bottom: 0;
-    padding-left: 0;
-    li {
+  ul li {
     display: inline;
     transition: all 0.2s;
     word-spacing: 30px;
@@ -68,11 +65,10 @@ $color-two: #d23aca;
         border-radius: 10px;
       }
     }
-      .fas,
-      .fab {
-        padding: 0px 15px;
-        opacity: 30%;
-      }
+    .fas,
+    .fab {
+      padding: 0px 15px;
+      opacity: 30%;
     }
   }
 }
