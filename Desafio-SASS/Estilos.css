@@ -155,15 +155,19 @@
   justify-content: flex-end;
 }
 .div-button-destacados {
-  margin: 10px 10px;
-}
-.div-button-destacados {
   display: flex;
   justify-content: center;
+  margin: 10px 10px;
 }
 .button-destacados a {
   text-decoration: none;
   color: white;
+}
+.button-mac{
+  color: black;
+}
+.button-mac a{
+  text-decoration: black;
 }
 .button-destacados a:hover {
   color: #d23aca;
@@ -297,52 +301,12 @@ tr {
 .divGlobal {
   margin: 10px;
 }
-.h1_ipad {
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-tr td ol li {
-  list-style-type: circle;
-  margin: 30px;
-}
-tr td {
-  padding: 5px;
-  margin: 10px;
-}
-.table_ipad {
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-.image_ipad {
-  margin-left: 30px;
+.selection-version {
+  color: #d23aca;
+  text-transform: uppercase;
+  text-decoration-line: underline;
 }
 
-.tit_ipad {
-  color: blueviolet;
-  font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
-}
-.ipadmodel {
-  background-color: cornflowerblue;
-  font-family: 'Manrope', sans-serif;
-}
-.ipadcolor {
-  background-color: cyan;
-  font-family: 'Manrope', sans-serif;
-}
-.ipadmemory {
-  background-color: darkkhaki;
-  font-family: 'Manrope', sans-serif;
-}
-.ipadvalor {
-  background-color: darkseagreen;
-  font-family: 'Manrope', sans-serif;
-}
-.filas {
-  background-color: rgb(212, 212, 212);
-  font-family: 'Manrope', sans-serif;
-}
 
 /* Estilo para iPhone */
 .div-iphone {
@@ -365,6 +329,10 @@ tr td {
 .h1_nav_iphone {
   margin-top: 30px;
 }
+.container-fluid{
+  text-align: center;
+}
+
 /* .filas {
   background-color: rgb(211, 169, 169);
 } */
@@ -491,34 +459,39 @@ tr td {
   margin-bottom: 20px;
 }
 .titMac {
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   text-transform: initial;
-  color: rgb(248, 10, 236);
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 10px;
+  color: #2d7bea;
+  font-family: 'Manrope', sans-serif;
+  margin-top: 35px;
+  font-size: 40px; 
+  text-shadow: 3px 3px 3px #d23aca;
 }
 
-.macModel {
-  background-color: cornflowerblue;
+.vendidos-mac h3 {
+  color: rgb(255, 255, 255);
   font-family: 'Manrope', sans-serif;
+  position: relative;
+  background-color: #2d7bea;
+  margin-bottom: 0;
+  padding: 5px 0;
 }
-.macColor {
-  background-color: cyan;
-  font-family: 'Manrope', sans-serif;
+
+.div-button-mac {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
 }
-.macMemory {
-  background-color: darkkhaki;
-  font-family: 'Manrope', sans-serif;
+.button-mac{
+  color: black;
 }
-.macProcer {
-  background-color: firebrick;
-  color: floralwhite;
-  font-family: 'Manrope', sans-serif;
+.button-mac a {
+  text-decoration: none;
+  color: black;
 }
-.macValor {
-  background-color: darkseagreen;
-  font-family: 'Manrope', sans-serif;
+.button-mac a:hover {
+  color: #d23aca;
 }
 .filas {
   background-color: rgba(172, 172, 172, 0.822);
@@ -538,6 +511,7 @@ tr td {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 .label {

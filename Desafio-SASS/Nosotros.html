@@ -9,19 +9,76 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="Estilos.css" />
+    <link rel="stylesheet" href="prueba.css" />
+
     <title>Nosotros</title>
   </head>
   <body class="bodyNosotros">
     <div class="divGlobal">
-      <nav class="nav_nosotros">
-        <a href="index.html">Home</a>
-      </nav>
+      <div class="div_nav_watch">
+        <div>
+          <header class="header">
+            <div class="logo-iphone">
+              <img class="logo-logo" src="Imagenes/logo.jpg" alt="logo" />
+            </div>
+            <div class="navIndex">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="index.html"
+                      ><i class="fas fa-home"></i><b>Inicio</b></a
+                    >
+                  </li>
+                  <li>
+                    <a href="iPhone(SASS).html"
+                      ><i class="fas fa-mobile-alt"></i><b>iPhone</b></a
+                    >
+                  </li>
+                  <li>
+                    <a href="Mac.html"
+                      ><i class="fas fa-laptop"></i><b>Mac</b></a
+                    >
+                  </li>
+                  <li>
+                    <a href="iPad.html"
+                      ><i class="fas fa-tablet-alt"></i><b>iPad</b></a
+                    >
+                  </li>
+                  <li>
+                    <a href="Watch.html"
+                      ><i class="fas fa-clock"></i><b>Watch</b></a
+                    >
+                  </li>
+                  <li>
+                    <a href="Nosotros.html"
+                      ><i class="fab fa-apple"></i><b>Nosotros</b></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        </div>
+
       <h1 class="tit-nosotros">Contactanos!</h1>
       <div class="container">
         <form class="form-inline label" action="">
@@ -54,16 +111,23 @@
               class="form-group"
               name=""
               id=""
-              cols="50"
+              cols="35"
               rows="5"
               placeholder="Comentarios"
             ></textarea>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-default" id="">Enviar</button>
+            <button class="button-nosotros" type="submit" class="btn btn-default" id="">Enviar</button>
           </div>
         </form>
       </div>
+      <footer class="footer">
+        <div class>Copyright</div>
+        <div class="iconos">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
     </div>
     <script>
       new WOW().init();
