@@ -164,10 +164,10 @@
   text-decoration: none;
   color: white;
 }
-.button-mac{
+.button-mac {
   color: black;
 }
-.button-mac a{
+.button-mac a {
   text-decoration: black;
 }
 .button-destacados a:hover {
@@ -308,7 +308,6 @@ tr {
   text-decoration-line: underline;
 }
 
-
 /* Estilo para iPhone */
 .logo-iphone__img {
   border-style: solid;
@@ -316,7 +315,8 @@ tr {
   display: flex;
   border-width: 3px;
   border-radius: 10px;
-  animation: girar 1s infinite linear; }
+  animation: girar 1s infinite linear;
+}
 
 .div-iphone {
   margin-top: 30px;
@@ -339,7 +339,7 @@ tr {
 .h1_nav_iphone {
   margin-top: 30px;
 }
-.container-fluid{
+.container-fluid {
   text-align: center;
 }
 
@@ -357,7 +357,7 @@ tr {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 150px);
   gap: 20px 20px;
   justify-content: center;
@@ -475,7 +475,7 @@ tr {
   color: #2d7bea;
   font-family: 'Manrope', sans-serif;
   margin-top: 35px;
-  font-size: 40px; 
+  font-size: 40px;
   text-shadow: 3px 3px 3px #d23aca;
 }
 
@@ -493,7 +493,7 @@ tr {
   justify-content: center;
   margin: 10px 10px;
 }
-.button-mac{
+.button-mac {
   color: black;
 }
 .button-mac a {
@@ -564,5 +564,21 @@ tr {
 @media screen and (max-width: 464px) {
   .navIndex {
     margin-top: 10px;
+  }
+}
+@media (max-width: 1150px) {
+  .grid-container {
+    display: block;
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(3, 150px);
+    /* gap: gap en smart si es igual que en desktop borras esta propiedad (fiajte qu eno puse display grid xq ya lo trae del otro tamaño; */
+    /* justify-content: center idem gap; */
+  }
+  .watch1,
+  .watch2,
+  .watch3,
+  .watch4 {
+    height: 250px;
+    margin-top: 1.5rem;
   }
 }
